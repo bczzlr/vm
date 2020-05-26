@@ -1,0 +1,10 @@
+package com.roylurui;
+public class MyTest05 {
+    public static void main(String[] args) {
+        int a = 6;
+        int b = 7;
+        int c = 2;
+        int d = a + b + c;
+        System.out.println(d);
+    }
+}
