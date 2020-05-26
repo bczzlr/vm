@@ -16,14 +16,15 @@ public class Myconverse {
                 arrayList.clear();
                 BufferedReader br = new BufferedReader(new FileReader(file));
                 String s ;
-                //按行读取
-                //存入集合对象
-                //不为空
+
                 while ((s = br.readLine())!=null){
+                    //非空则添加
                     arrayList.add(s);
+                    //BufferedReader br = new BufferedReader(new FileReader(file));
                 }
             } catch (FileNotFoundException e) {
                 e.printStackTrace();
+                //catch (FileNotFoundException e) {
             } catch (IOException e) {
                 e.printStackTrace();
             }

@@ -14,10 +14,22 @@ import java.util.ArrayList;
 public class Compile {
     public static void startCompile (File file) throws IOException {
         Myconverse myconverse = new Myconverse();
-        //使用arraylist存储
-        //集合中存放着每一行的信息
+
         ArrayList<String> strings = myconverse.testConverse(file);
         //将集合的信息 交给真正编译的工具进行编译
+        /*
+        case '+': printf("PLUS +\n"); return 3;
+		case '-': printf("MINU -\n"); return 3;
+		case '*': printf("MULT *\n"); return 3;
+		case '/': printf("DIV /\n"); return 3;
+		case ';': printf("SEMICN ;\n"); return 3;
+		case '(': printf("LPARENT (\n"); return 3;
+		case ')': printf("RPARENT )\n"); return 3;
+		case '{': printf("LBRACE {\n"); return 3;
+		case '}': printf("RBRACE }\n"); return 3;
+		case '[': printf("LBRACK [\n"); return 3;
+		case ']': printf("RBRACK ]\n"); return 3;
+         */
         String s = wordAnalyse.test1(strings);
 
         //写到字节码文件中去

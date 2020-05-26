@@ -50,6 +50,27 @@ public class LoadInMethodArea {
                 //2.获取并保存操作数
                 String instruct_num = s.substring(s.indexOf(":") + 1).trim();  //iconst_4    iadd
                 char[] chars = instruct_num.toCharArray();  //0:iconst_4
+                /*
+                		case '"': //识别字符串
+			i++;
+			printf("STRCON ");
+			do
+			{
+				printf("%c", test[i]);
+				i++;
+
+			} while (test[i]!='"');
+			printf("\n");
+			return 3;
+		case ',': printf("COMMA ,\n"); return 3;
+		/*
+					 //将该标识符保存到标识符表中
+        strcpy(mark[line], word);
+
+        printf(">> %s\t(25, %d) 标识符\n", word, line + 1);
+        line++;
+        return 3;s
+                 */
                 for (int index = 0; index < chars.length; index++) {
                     if (LoadInMethodArea.isDigit(chars[index])) {
                         num = instruct_num.substring(instruct_num.indexOf(chars[index]));

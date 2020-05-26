@@ -30,24 +30,62 @@ public class getNibolan {
         //处理字符串
         for (int i = 0; i < input.length(); i++) {
             if(input.charAt(i)==' ')continue;
-            //如果是'('直接压栈
+
             if (input.charAt(i) == '(') {
                 opStack.push('(');
             } else if (getNibolan.isOperator(input.charAt(i))) {
                 //如果是运算符
                 char curOp = input.charAt(i);
-                //如果运算符栈是空，就直接压栈
+
                 if (opStack.isEmpty()) {
                     opStack.push(curOp);
                 } else if (opMap.get(curOp) > opMap.get(opStack.peek())) {
-                    //运算符栈不为空，且当当前运算符的优先级比站内第一个运算符的优先级高的时候，压栈
+
                     opStack.push(curOp);
                 } else {
-                    //栈不为空，且运算符的优先级小于等于栈顶元素
+
                     for (int j = 0; j <= opStack.size(); j++) {
                         //弹出栈内第一个元素
                         char ch = opStack.pop();
                         sb.append(ch);
+                        /*
+                        			/*
+case ' ':
+        case '\n':
+            return -1;
+        case '#': return 0;
+        case '=':printf(">> =\t(27,-)\n"); return 3;
+        case '<':
+            i++;
+            if (test[i] == '=')
+            {
+                printf(">> <= \t(28,-)\n");
+                return 3;
+            }
+            else if (test[i] == '>')
+            {
+                printf(">> <>\t(29,-)\n");
+                return 3;
+            }
+            else
+            {
+                i--;
+                printf(">> <\t(30,-)\n");
+                return 3;
+            }
+case '>':
+            i++;
+            if (test[i] == '=')
+            {
+                printf(">> >=\t(31,-)\n");
+                return 3;
+            }
+            else
+            {
+                i--;
+                printf(">> >\t(32,-)\n");
+                return 3;
+                         */
                         if (opStack.isEmpty()) {
                             opStack.push(curOp);
                             break;
@@ -58,9 +96,16 @@ public class getNibolan {
                     }
                 }
             } else if (input.charAt(i) == ')') {
-                //如果是')'就把站内'('上的元素都弹出栈
                 for (int j = 0; j < opStack.size(); j++) {
                     char c = opStack.pop();
+                    /*
+                    		switch (m)
+                                {
+                                case -1:i++; break;
+                                case 0: i++; break;
+                                case 3: i++; break;
+                                }
+                     */
                     if (c == '(') {
                         break;
                     } else {
@@ -68,13 +113,31 @@ public class getNibolan {
                     }
                 }
             } else if ('A'<=input.charAt(i)&&input.charAt(i)<='Z'){
-                //如果是字母就直接添加
+
                 sb.append(input.charAt(i));
             }else if ('a'<=input.charAt(i)&&input.charAt(i)<='z'){
-                //如果是字母就直接添加
+
                 sb.append(input.charAt(i));
             }else if (Character.isDigit(input.charAt(i))){
-                //如果是数字
+
+
+                /*
+                	else if (test[i] >= '0' && test[i] <= '9')
+	{
+		char x[100];
+		int n = 0;
+		x[n++] = test[i++];
+		while (test[i] >= '0' && test[i] <= '9')
+		{
+			x[n++] = test[i++];
+		}
+		x[n] = '\0';
+		i--;
+		int num = atoi(x); //将字符串转换成int型
+		printf("INTCON %d\n", num);
+		return 3;
+	}
+                 */
                 sb.append(input.charAt(i));
             }else {
                 return new StringBuilder("But the expression contains unrecognizable characters");

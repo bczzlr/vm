@@ -34,6 +34,47 @@ public class engine {
                 case "PUSH":
                     operandStack.push(Integer.parseInt(instructInfo[1]));
                     break;
+                    /*
+                    		case '!':
+			i++;
+			if (test[i] == '=')
+			{
+				printf("NEQ !=\n");
+				return 3;
+			}
+			else
+			{
+				i--;
+				printf("NOT !\n");
+				return 3;
+			}
+		case '<':
+			i++;
+			if (test[i] == '=')
+			{
+				printf("LEQ <=\n");
+				return 3;
+			}
+			else
+			{
+				i--;
+				printf("LSS <\n");
+				return 3;
+			}
+		case '>':
+			i++;
+			if (test[i] == '=')
+			{
+				printf("GEQ >=\n");
+				return 3;
+			}
+			else
+			{
+				i--;
+				printf("GRE >\n");
+				return 3;
+			}
+                     */
                 case "STORE":
                     Integer operator = operandStack.pop();
                     arrayList.add(Integer.parseInt(instructInfo[1])-1, operator);

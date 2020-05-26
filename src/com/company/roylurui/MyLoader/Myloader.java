@@ -15,9 +15,27 @@ import java.util.Map;
 public class Myloader {
 
     public static void loadInArea() {
+        //文件io
         File compiled = new File("byteCodeClass.txt");
+
         Myconverse myconverse = new Myconverse();
-        ArrayList<String> conversed = myconverse.testConverse(compiled);//得到每一行字节码信息
+        //得到每一行字节码信息
+        ArrayList<String> conversed = myconverse.testConverse(compiled);
+
+        /*
+
+            @Override
+    public List<Commodity> getAll() {
+
+        List<CommodityEntity> commodities = commodityRepository.findByComStatus("released");
+
+        List<Commodity> commodityList = commodities.stream().map( entity ->{
+
+            Commodity commodity = new Commodity();
+            BeanUtils.copyProperties(entity,commodity);
+            return commodity;
+        }).collect(Collectors.toList());
+         */
 //        System.out.println(conversed);
         //得到指令信息
         Map<Integer,String[]> instruct_num = LoadInMethodArea.loader(conversed);

@@ -1,15 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="09bd9236-66ca-4bc7-baf8-2843803f3882" name="Default Changelist" comment="" />
+    <list default="true" id="09bd9236-66ca-4bc7-baf8-2843803f3882" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/roylurui/Compile/Compile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/roylurui/Compile/Compile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/roylurui/Compile/getNibolan.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/roylurui/Compile/getNibolan.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/roylurui/Compile/wordAnalyse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/roylurui/Compile/wordAnalyse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/roylurui/Engine/engine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/roylurui/Engine/engine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/roylurui/Instrution/InstructSet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/roylurui/Instrution/InstructSet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/roylurui/MyLoader/LoadInMethodArea.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/roylurui/MyLoader/LoadInMethodArea.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/roylurui/MyLoader/Myloader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/roylurui/MyLoader/Myloader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/roylurui/utils/Myconverse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/roylurui/utils/Myconverse.java" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1c9ulhOniV5mELqhZbLwAcYT29m" />
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -86,10 +101,22 @@
       <updated>1589953282209</updated>
       <workItem from="1589953285648" duration="13983000" />
       <workItem from="1590296651834" duration="9744000" />
+      <workItem from="1590479360612" duration="962000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
